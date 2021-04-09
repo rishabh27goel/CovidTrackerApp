@@ -23,7 +23,6 @@ function InfoBox({title, active, isRed, cases, total, ...props}) {
 
                 {/* +120k Number of cases */}
                 <h2 className={`infoBox__cases ${isRed && title === "Coronavirus Cases" && "infoBox__cases--orange"} ${!isRed && "infoBox__cases--green"}`}>{cases}</h2>
-                {console.log(active[0])}
 
                 {/* 1.2M Total */}
                 <Typography className="infoBox__total">

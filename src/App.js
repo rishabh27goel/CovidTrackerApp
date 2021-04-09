@@ -24,12 +24,12 @@ function App() {
       lat: 34.80746,
       lng: -40.4796
   });
-  const [mapZoom, setMapZoom] = useState(2.3);
+  const [mapZoom, setMapZoom] = useState(2.4);
   const [mapCountries, setMapCountries] = useState([]);
   const [casesType, setCasesType] = useState("cases");
 
-
   useEffect(() => {
+
     fetch('https://disease.sh/v3/covid-19/all')
     .then((response) => response.json())
     .then((data) => {
@@ -87,14 +87,15 @@ function App() {
         if(flag){
           
           setMapCenter([34.80746,-40.4796]);
+          setMapZoom(2.4);
         }
         else{
 
           setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
-          
+          setMapZoom(3.5);
         }
         
-        setMapZoom(4);
+        
     });
 
   };
