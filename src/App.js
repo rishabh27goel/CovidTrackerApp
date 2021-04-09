@@ -24,7 +24,7 @@ function App() {
       lat: 34.80746,
       lng: -40.4796
   });
-  const [mapZoom, setMapZoom] = useState(2.4);
+  const [mapZoom, setMapZoom] = useState(3);
   const [mapCountries, setMapCountries] = useState([]);
   const [casesType, setCasesType] = useState("cases");
 
@@ -87,12 +87,12 @@ function App() {
         if(flag){
           
           setMapCenter([34.80746,-40.4796]);
-          setMapZoom(2.4);
+          setMapZoom(3);
         }
         else{
 
           setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
-          setMapZoom(3.5);
+          setMapZoom(4);
         }
         
         
