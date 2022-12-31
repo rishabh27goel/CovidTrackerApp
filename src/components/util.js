@@ -4,19 +4,16 @@ import {Circle, Popup} from 'react-leaflet';
 
 const casesTypeColors = {
     cases: {
-        // hex: "#db4443",
         hex: "#FF8C00",
-        // multiplier: 800,
-        multiplier: 400,
+        multiplier: 200,
     },
     recovered: {
         hex: "#33d433",
-        // multiplier: 1200,
-        multiplier: 400,
+        multiplier: 225,
     },
     deaths: {
         hex: "#fb4443",
-        multiplier: 1800,
+        multiplier: 1600,
     },
 }
 export const prettyPrintStats = (stat) =>
